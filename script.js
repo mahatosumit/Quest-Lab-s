@@ -1,26 +1,28 @@
-let currentIndex = 0;
+let currentSlide = 0;
 
 function showSlide(index) {
-  const slides = document.querySelectorAll('.slide');
-  if (index >= slides.length) {
-    currentIndex = 0;
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
+  
+  if (index >= totalSlides) {
+    currentSlide = 0;
   } else if (index < 0) {
-    currentIndex = slides.length - 1;
+    currentSlide = totalSlides - 1;
   } else {
-    currentIndex = index;
+    currentSlide = index;
   }
-  const offset = -currentIndex * 100;
-  document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+
+  const offset = -currentSlide * 100 / totalSlides;
+  slides.style.transform = `translateX(${offset}%)`;
 }
 
 function nextSlide() {
-  showSlide(currentIndex + 1);
+  showSlide(currentSlide + 1);
 }
 
 function prevSlide() {
-  showSlide(currentIndex - 1);
+  showSlide(currentSlide - 1);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  showSlide(currentIndex);
-});
+// Automatically cycle through slides every 5 seconds
+setInterval(nextSlide, 5000);

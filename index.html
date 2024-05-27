@@ -1,112 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quest Lab's</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quest Lab's</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
 
-  <body>
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar1">
-        <div class="container-fluid">
-          <a id="logo" href="#">Quest Lab's</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">KITS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Designs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTS</a>
-              </li>
-            </ul>
-
-            <div class="d-flex media-icons">
-              <a href="#" target="_blank"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-              <a href="#" target="_blank"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a href="#" target="_blank"
-                ><i class="fa-solid fa-envelope"></i
-              ></a>
-            </div>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar1" >
+      <div class="container-fluid" id="navv">
+        <a id="logo" href="#">Quest Lab's</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navv">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#KITS">KITS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ABOUT-US">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link" href="#DESIGNS">Designs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#CONTACTS">CONTACTS</a></li>
+          </ul>
+          <div class="d-flex media-icons" id="icon">
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
-      </nav>
-    </header>
-    <section>
-      <div class="hero">
-        <!-- Slideshow container -->
-        <div class="slider">
-          <div class="slides">
-            <div class="slide">
-              <div class="slide">
-                <img src="./kit-1.webp" alt="Image 2" />
-              </div>
-              <img src="./robo.jpg" alt="Image 1" />
-            </div>
+      </div>
+    </nav>
+  </header>
 
-            <div class="slide">
-              <img src="./robotics.jpg" alt="Image 3" />
-            </div>
-          </div>
-          <button class="prev" onclick="prevSlide()">&#10094;</button>
-          <button class="next" onclick="nextSlide()">&#10095;</button>
+  <section class="hero">
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><img src="5.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="6.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="7.jpg" alt="Image 3"></div>
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="main" id="KITS"></section>
+  <section class="main1" id="DESIGNS"></section>
+
+  <!-- Why Section -->
+  <section id="WHY" class="info-section">
+    <h1>Why?</h1>
+    <p>We want to pursue this business idea because we are passionate about leveraging technology to solve real-world problems and improve lives, whether by inspiring students through robotics education or enhancing independence for specially-abled individuals.</p>
+  </section>
+
+  <!-- What Section -->
+  <section id="WHAT" class="info-section">
+    <h1>What?</h1>
+    <p>Our venture, Quest Lab, is dedicated to revolutionizing education and accessibility through innovative robotics solutions. We specialize in two main areas: crafting interactive and educational robotic learning kits tailored for students, and designing advanced robotic arms to assist individuals with disabilities in daily tasks.</p>
+  </section>
+
+  <!-- How Section -->
+  <section id="HOW" class="info-section">
+    <h1>How?</h1>
+    <p>Quest Lab solves the problem of limited STEM education engagement and accessibility for individuals with disabilities through innovative robotics solutions. Our revenue is generated through sales of kits to educational institutions and individuals, subscription-based access to our educational platform, direct sales of robotic arms, and partnerships with healthcare providers.</p>
+  </section>
+
+  <!-- Our Team Section -->
+ 
+  <!-- Our Team Section -->
+  <section id="OUR-TEAM" class="info-section team-section">
+    <h1>Our Team</h1>
+    <div class="team-members">
+      <div class="team-member">
+        <img src="1.png" alt="CEO">
+        <div class="member-info">
+          <h3>BIBEK PANDIT</h3>
+          <p>Chief Executive Officer (CEO)</p>
         </div>
       </div>
-    </section>
-    <section class="main" id="KITS"></section>
-    <section class="main1" id="DESIGNS"></section>
-
-    <footer>
-      <div class="text">
-        <span>
-          <a href="#" target="_blank">Quest Lab's 2024</a>
-          | &#169; 2024 All Rights Reserved</span
-        >
+      <div class="team-member">
+        <img src="2.png" alt="CTO">
+        <div class="member-info">
+          <h3>THIRUPATHIAJAY P A</h3>
+          <p>Chief Technology Officer (CTO)</p>
+        </div>
       </div>
-    </footer>
+      <div class="team-member">
+        <img src="3.png" alt="CFO">
+        <div class="member-info">
+          <h3>HARANI S</h3>
+          <p>Chief Financial Officer (CFO)</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="4.jpg" alt="CGO">
+        <div class="member-info">
+          <h3>SUMIT MAHATO</h3>
+          <p>Chief Growth Officer (CGO)</p>
+        </div>
+      </div>
+     
+    </div>
 
-    <script src="script.js"></script>
-  </body>
+    <p>Our team is comprised of dedicated professionals with diverse expertise in robotics, education, healthcare, and technology development. We are committed to driving innovation and making a meaningful impact through our products and services.</p>
+  </section>
+
+  <footer>
+    <div class="text">
+      <span><a href="#" target="_blank">Quest Lab's </a> | &#169; 2024 All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
